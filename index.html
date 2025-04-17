@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Missouri Gauge Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div id="map"></div>
+
+<div id="controls">
+  <label for="rfc-select">RFC:</label>
+  <select id="rfc-select"><option value="">All</option></select>
+
+  <label for="wfo-select">WFO:</label>
+  <select id="wfo-select"><option value="">All</option></select>
+
+  <label><input type="checkbox" id="include-non-forecast"> Include non-forecast</label>
+
+  <button id="download-btn">Export CSV</button>
+</div>
+
+<div id="forecast-list" class="info-bar"></div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://unpkg.com/topojson-client@3.1.0/dist/topojson-client.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
